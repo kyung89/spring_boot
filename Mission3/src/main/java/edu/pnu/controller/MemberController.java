@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,12 +28,12 @@ public class MemberController {
 	}
 	
 	@PostMapping("/member")
-	public MemberVO addMember(MemberVO memberVO) {
+	public MemberVO addMember(@RequestBody MemberVO memberVO) {
 		return service.addMember(memberVO);
 	}
 	
 	@PutMapping("/member")
-	public int updateMember(MemberVO memberVO) {
+	public int updateMember(@RequestBody MemberVO memberVO) {
 		return service.updateMember(memberVO);
 	}
 	
@@ -45,4 +46,13 @@ public class MemberController {
 	public MemberVO addMemberJSON(@RequestBody MemberVO memberVO) {
 		return service.addMember(memberVO);
 	}
+	
+	/*
+	@GetMapping("/board/{id}")
+	public String board(@PathVariable Integer id) {
+		System.out.println("id: " + id);
+		
+		return boardService.getBoard(id);
+	}
+	*/
 }

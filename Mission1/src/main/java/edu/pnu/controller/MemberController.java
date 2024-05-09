@@ -44,7 +44,7 @@ public class MemberController {
 	}
 	
 	@PostMapping("/member")
-	public MemberVO addMember(MemberVO memberVO) {
+	public MemberVO addMember(@RequestBody MemberVO memberVO) {
 		if (getMemberById(memberVO.getId()) != null)
 			return null;
 		memberVO.setRegidate(new Date());
@@ -53,7 +53,7 @@ public class MemberController {
 	}
 	
 	@PutMapping("/member")
-	public int updateMember(MemberVO memberVO) {
+	public int updateMember(@RequestBody MemberVO memberVO) {
 		MemberVO m = getMemberById(memberVO.getId());
 		if (m == null)
 			return 0;
