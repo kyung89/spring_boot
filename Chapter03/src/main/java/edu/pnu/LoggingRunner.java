@@ -24,3 +24,4 @@ public class LoggingRunner implements ApplicationRunner {
 }
 
 // 빌드: Run as -> Maven Install
+// java -jar Chapter03-0.0.1-SNAPSHOT.jar
