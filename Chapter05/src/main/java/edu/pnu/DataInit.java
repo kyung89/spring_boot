@@ -21,27 +21,27 @@ public class DataInit implements ApplicationRunner {
 	public void run(ApplicationArguments args) throws Exception {
 		// TODO Auto-generated method stub
 
-		Random rd = new Random();
-		for (int i=1; i<5; i++) {
-			boardRepo.save(Board.builder()
-					.title("title1" + i)
-					.writer("member1")
-					.content("content1" + i)
-					.createDate(new Date())
-					.cnt(Math.abs(rd.nextLong()%100L))
-					.build()
-					);
-		}
-		for (int i=1; i<5; i++) {
-			boardRepo.save(Board.builder()
-					.title("title2" + i)
-					.writer("member2")
-					.content("content2" + i)
-					.createDate(new Date())
-					.cnt(Math.abs(rd.nextLong()%100L))
-					.build()
-					);
-		}
+//		Random rd = new Random();
+//		for (int i=1; i<5; i++) {
+//			boardRepo.save(Board.builder()
+//					.title("title1" + i)
+//					.writer("member1")
+//					.content("content1" + i)
+//					.createDate(new Date())
+//					.cnt(Math.abs(rd.nextLong()%100L))
+//					.build()
+//					);
+//		}
+//		for (int i=1; i<5; i++) {
+//			boardRepo.save(Board.builder()
+//					.title("title2" + i)
+//					.writer("member2")
+//					.content("content2" + i)
+//					.createDate(new Date())
+//					.cnt(Math.abs(rd.nextLong()%100L))
+//					.build()
+//					);
+//		}
 	}
 
 }

@@ -2,4 +2,15 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest.WebEnvironment"/>
     <fullyQualifiedTypeName name="edu.pnu.dao.MemberDao"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.TemporalType"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.ClassOrderer.OrderAnnotation"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.MethodOrderer.OrderAnnotation"/>
+    <fullyQualifiedTypeName name="edu.pnu.persistance.BoardRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.PageRequest"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.Sort"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.Sort.Direction"/>
+    <fullyQualifiedTypeName name="edu.pnu.domain.QBoard"/>
+    <fullyQualifiedTypeName name="com.querydsl.core.BooleanBuilder"/>
 </qualifiedTypeNameHistroy>
