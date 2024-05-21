@@ -15,6 +15,7 @@
 		<item value="org.eclipse.jgit.ssh.apache:6.9.0.202403050737-r"/>
 		<item value="org.eclipse.jgit:6.9.0.202403050737-r"/>
 		<item value="org.eclipse.jst.common.fproj.enablement.jdt:3.29.0.v202308161955"/>
+		<item value="org.eclipse.jst.ws.cxf.feature:1.1.1200.v202311232240"/>
 		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:17.0.11.v20240426-1830"/>
 		<item value="org.eclipse.m2e.feature:2.6.0.20240220-1109"/>
 		<item value="org.eclipse.m2e.logback.feature:2.6.0.20240217-1525"/>
@@ -29,6 +30,9 @@
 		<item value="org.eclipse.tm.terminal.view.feature:11.5.0.202312281935"/>
 		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
 		<item value="org.eclipse.wst.common.fproj:3.7.4.v202308161955"/>
+		<item value="org.eclipse.wst.json_ui.feature:1.1.11.v202308160419"/>
+		<item value="org.eclipse.wst.web_ui.feature:3.31.0.v202403030558"/>
+		<item value="org.eclipse.wst.xml_ui.feature:3.33.0.v202402030243"/>
 		<item value="org.jboss.tools.m2e.wro4j.feature:1.2.1.202301111328"/>
 		<item value="org.sonatype.m2e.egit.feature:0.17.0.202209271423"/>
 	</list>
