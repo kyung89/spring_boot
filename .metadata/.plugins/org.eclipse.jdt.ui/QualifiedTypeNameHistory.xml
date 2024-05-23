@@ -19,4 +19,5 @@
     <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
     <fullyQualifiedTypeName name="edu.pnu.domain.Log"/>
     <fullyQualifiedTypeName name="edu.pnu.persistance.BoardRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.builders.HttpSecurity"/>
 </qualifiedTypeNameHistroy>

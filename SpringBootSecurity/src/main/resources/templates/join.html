@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>시큐리티 테스트</title>
+</head>
+<body th:align="center">
+	<h2>로그인</h2>
+	<form action="/join" method="POST">
+		<table th:align="center" border="1" th:cellpadding="0"
+			th:cellspacing="0">
+			<tr>
+				<td bgcolor="gray">username:</td>
+				<td><input type="text" name="username" placeholder="Username" /></td>
+			</tr>
+			<tr>
+				<td bgcolor="gray">password:</td>
+				<td><input type="password" name="password"
+					placeholder="Password" /></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">
+					<input type="radio" id="enabled" name="enabled" value="true" checked /><label for="enabled">ENABLED</label>
+					<input type="radio" id="disabled" name="disabled" value="false" /><label for="disabled">DISABLED</label>
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">
+					<input type="radio" id="member" name="role" value="ROLE_MEMBER" checked /><label for="member">member</label>
+					<input type="radio" id="manager" name="role" value="ROLE_MANAGER" /><label for="manager">manager</label>
+					<input type="radio" id="admin" name="role" value="ROLE_ADMIN" /><label for="admin">admin</label>
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="로그인" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
