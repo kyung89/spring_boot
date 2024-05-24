@@ -12,12 +12,16 @@
     <fullyQualifiedTypeName name="edu.pnu.domain.QBoard"/>
     <fullyQualifiedTypeName name="com.querydsl.core.BooleanBuilder"/>
     <fullyQualifiedTypeName name="edu.pnu.domain.Board"/>
-    <fullyQualifiedTypeName name="edu.pnu.domain.Member"/>
     <fullyQualifiedTypeName name="lombok.ToString.Exclude"/>
     <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
-    <fullyQualifiedTypeName name="edu.pnu.persistance.MemberRepository"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
     <fullyQualifiedTypeName name="edu.pnu.domain.Log"/>
     <fullyQualifiedTypeName name="edu.pnu.persistance.BoardRepository"/>
     <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.builders.HttpSecurity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
+    <fullyQualifiedTypeName name="edu.pnu.domain.Member"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.authority.AuthorityUtils"/>
+    <fullyQualifiedTypeName name="edu.pnu.domain.Role"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.User"/>
+    <fullyQualifiedTypeName name="edu.pnu.persistance.MemberRepository"/>
 </qualifiedTypeNameHistroy>
