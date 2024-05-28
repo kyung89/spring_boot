@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import ch.qos.logback.core.status.Status;
 import edu.pnu.domain.Member;
+import edu.pnu.util.JWTUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -38,7 +39,8 @@ public class LoginController {
 			for (GrantedAuthority ga : cols) {
 				role.append(ga.getAuthority());
 			}
-			String jwtToken = JWTUtil.getJWT(user.getUsername(), role.toString());
+//			String jwtToken = JWTUtil.getJWT(user.getUsername(), role.toString());
+			String jwtToken = JWTUtil.getJWT(user.getUsername());
 			
 			log.info(user.toString());
 			log.debug(jwtToken);

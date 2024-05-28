@@ -3,6 +3,7 @@ org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=4
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=5
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.h2=5
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.lombok=11
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.oauth2-client=2
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.security=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.thymeleaf=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=11
