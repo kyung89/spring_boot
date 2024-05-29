@@ -1,0 +1,38 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+
+<head>
+	<title>게시글 목록</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body th:align="center">
+	<h1>게시글 목록</h1>
+	
+	<span sec:authorize="isAuthenticated()">
+		<b><font color="red"><span sec:authentication="principal.member.name"></span></font></b> 님 환영합니다.
+		<a th:href="@{/system/logout}">로그아웃</a>&nbsp;&nbsp;&nbsp;
+		<a th:href="@{/admin/adminPage}">게시판 관리</a>
+	</span>
+	
+	<hr><table th:align="center" border="1" th:cellpadding="0" th:cellspacing="0" th:width="700">
+		<tr>
+			<th bgcolor="orange" width="50">번호</th>
+			<th bgcolor="orange" width="400">제목</th>
+			<th bgcolor="orange" width="100">작성자</th>
+			<th bgcolor="orange" width="100">등록일</th>
+			<th bgcolor="orange" width="50">조회수</th>
+		</tr>
+		
+		<tr th:each="board, state : ${boardList}">
+			<td th:text="${state.count}" th:align="center">
+			<td><a th:href="@{/board/getBoard(seq=${board.seq})}" th:text="${board.title}"></a></td>
+			<td th:text="${board.member.name}" th:align="center">
+			<td th:text="${#dates.format(board.createDate, 'yyyy-MM-dd')}" th:align="center">
+			<td th:text="${board.cnt}" th:align="center">
+		</tr>
+	</table>
+	<br>
+	<a th:href="@{/board/insertBoard}">게시글 등록</a>
+</body>
+</html>
