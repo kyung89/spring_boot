@@ -1,4 +1,5 @@
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
 
 <head>
 	<title>새 글 등록</title>
@@ -20,7 +21,7 @@
 		<tr>
 			<td bgcolor="orange" th:text="작성자"></td>
 			<td>
-				<input name="writer" type="text" size="10">
+				<span sec:authentication="principal.member.name"></span>
 			</td>
 		</tr>
 		
